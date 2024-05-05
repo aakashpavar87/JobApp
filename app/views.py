@@ -1,6 +1,7 @@
 from django.http import HttpResponse, HttpResponseNotFound
 from django.shortcuts import redirect
 from django.urls import reverse
+from django.template import loader
 # from django.urls import reverse
 
 job_title = [
@@ -35,6 +36,16 @@ def hello(request):
         return HttpResponse(html_res)
     except:
         return HttpResponseNotFound("Not Found Hello !!! 404")
+
+class MyObj:
+    x = 5
+
+def hello_file(request):
+    template = loader.get_template('home/hello.html')
+    list = ['apple', 'banana']
+    obj = MyObj()
+    context = {'name': 'Aakash', 'temp_list': list, 'object': obj}
+    return HttpResponse(template.render(context, request))
 
 def job_page(request, id):
     try:
