@@ -1,5 +1,5 @@
 from django.http import HttpResponse, HttpResponseNotFound
-from django.shortcuts import redirect
+from django.shortcuts import redirect, render
 from django.urls import reverse
 from django.template import loader
 # from django.urls import reverse
@@ -41,11 +41,12 @@ class MyObj:
     x = 5
 
 def hello_file(request):
-    template = loader.get_template('home/hello.html')
+    # template = loader.get_template('home/hello.html')
     list = ['apple', 'banana']
     obj = MyObj()
-    context = {'name': 'Aakash', 'temp_list': list, 'object': obj}
-    return HttpResponse(template.render(context, request))
+    context = {'name': 'Aakash', 'temp_list': list, 'object': obj, 'age': 19, 'isAuthentic': False}
+    # return HttpResponse(template.render(context, request))
+    return render(request, 'home/hello.html', context)
 
 def job_page(request, id):
     try:

@@ -10,13 +10,15 @@
 <body bgcolor="red" style="color: white">
   <h1>Hello World</h1>
 
-  <h3>{{name}}</h3>
-  <h3>{{temp_list.1}}</h3>
-  <h3>{{object.x}}</h3>
+  {% if isAuthentic %}
+  <h2>Hello {{name}}</h2>
+  {% else %}
+  <h2>Hello User</h2>
+  {% endif %}
+  <h3>Name : {{name}}</h3>
+  <h4>Fruits : {{temp_list}}</h4>
+  <h5>Class Attribute : {{object.x}}</h5>
+  <h6>Age : {{age}}</h6>
 </body>
-<script>
-  let res = confirm("Hello From Hello Template");
-  alert(res);
-</script>
 
 </html>
