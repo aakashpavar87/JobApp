@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Template</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>First Template</title>
-</head>
+  <body style="color: red">
+    <h1>Jobs</h1>
+    <ul>
+      {% for job in jobs %}
 
-<body bgcolor="red" style="color: white">
-  <h1>Hello World</h1>
-
-  {% if isAuthentic %}
-  <h2>Hello {{name}}</h2>
-  {% else %}
-  <h2>Hello User</h2>
-  {% endif %}
-  <h3>Name : {{name}}</h3>
-  <h4>Fruits : {{temp_list}}</h4>
-  <h5>Class Attribute : {{object.x}}</h5>
-  <h6>Age : {{age}}</h6>
-</body>
-
+      <li><a href="{% url "job_details" forloop.counter %}"> Role : {{ job }} </a></li>
+      {% endfor %}
+    </ul>
+  </body>
 </html>

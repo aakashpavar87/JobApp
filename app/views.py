@@ -37,15 +37,9 @@ def hello(request):
     except:
         return HttpResponseNotFound("Not Found Hello !!! 404")
 
-class MyObj:
-    x = 5
 
 def hello_file(request):
-    # template = loader.get_template('home/hello.html')
-    list = ['apple', 'banana']
-    obj = MyObj()
-    context = {'name': 'Aakash', 'temp_list': list, 'object': obj, 'age': 19, 'isAuthentic': False}
-    # return HttpResponse(template.render(context, request))
+    context = {'name': 'Aakash', 'jobs':jobs, 'desc':job_description}
     return render(request, 'home/hello.html', context)
 
 def job_page(request, id):
@@ -55,10 +49,11 @@ def job_page(request, id):
         print(type(id))
         if redirect_id == 0:
             return redirect("/")
-        html_response = f"""<h1>{job_title[redirect_id]}</h1>
-                            <h4>{job_description[redirect_id]}</h4>
-                            <h3> <a href={reverse('jobs_home')}>Home</a> </h3>"""
-        return HttpResponse(html_response)
+        context = {
+            'job_title': jobs[redirect_id],
+            'job_description': job_description[redirect_id]
+        }
+        return render(request,'home/job_detail.html', context)
     except:
         return HttpResponseNotFound("Not Found any ID !!! 404")
 
