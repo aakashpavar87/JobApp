@@ -2,6 +2,8 @@ from django.http import HttpResponse, HttpResponseNotFound
 from django.shortcuts import redirect, render
 from django.urls import reverse
 from django.template import loader
+
+from app.models import JobPost
 # from django.urls import reverse
 
 job_title = [
@@ -39,23 +41,43 @@ def hello(request):
 
 
 def hello_file(request):
-    context = {'name': 'Aakash', 'jobs':jobs, 'desc':job_description}
+    newJobs = JobPost.objects.filter()
+    context = {'name': 'Aakash', 'jobs':newJobs, 'desc':job_description}
     return render(request, 'home/hello.html', context)
 
+# New Function that interact with database
 def job_page(request, id):
     try:
         site = "localhost:8080"
-        redirect_id = id - 1
         print(type(id))
-        if redirect_id == 0:
-            return redirect("/")
+        redirect_Id = id - 1
+        # if redirect_Id == 0:
+        #     return redirect("/")
+        allJobs = JobPost.objects.filter()
         context = {
-            'job_title': jobs[redirect_id],
-            'job_description': job_description[redirect_id]
+            'job_title': allJobs[redirect_Id].title,
+            'job_description': allJobs[redirect_Id].description,
+            'job_salary': allJobs[redirect_Id].salary
         }
         return render(request,'home/job_detail.html', context)
     except:
         return HttpResponseNotFound("Not Found any ID !!! 404")
+
+
+# def job_page(request, id):
+#     try:
+#         site = "localhost:8080"
+#         redirect_id = id - 1
+#         print(type(id))
+#         if redirect_id == 0:
+#             return redirect("/")
+#         context = {
+#             'job_title': jobs[redirect_id],
+#             'job_description': job_description[redirect_id]
+#         }
+#         return render(request,'home/job_detail.html', context)
+#     except:
+#         return HttpResponseNotFound("Not Found any ID !!! 404")
 
 def job_info(request):
     try:
