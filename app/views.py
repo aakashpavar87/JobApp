@@ -49,15 +49,14 @@ def hello_file(request):
 def job_page(request, id):
     try:
         site = "localhost:8080"
-        print(type(id))
-        redirect_Id = id - 1
+        print(id)
         # if redirect_Id == 0:
         #     return redirect("/")
-        allJobs = JobPost.objects.filter()
+        foundJob = JobPost.objects.filter(slug=id)[0]
         context = {
-            'job_title': allJobs[redirect_Id].title,
-            'job_description': allJobs[redirect_Id].description,
-            'job_salary': allJobs[redirect_Id].salary
+            'job_title': foundJob.title,
+            'job_description': foundJob.description,
+            'job_salary': foundJob.salary
         }
         return render(request,'home/job_detail.html', context)
     except:

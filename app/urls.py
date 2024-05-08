@@ -15,7 +15,7 @@ def not_found(request, **kwargs):
 
 urlpatterns = [
     path('', views.hello_file, name='hello_file'),
-    path('job/<int:id>', views.job_page, name='job_details'),
+    path('job/<str:id>', views.job_page, name='job_details'),
     path('job', views.job_info, name='jobs_info'), 
     path('<path:invalid_path>', not_found),
 ]

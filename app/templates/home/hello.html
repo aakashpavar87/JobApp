@@ -11,7 +11,7 @@
     <ul>
       {% for job in jobs %}
 
-      <li><a href="{% url "job_details" job.id %}"> Role : {{ job }} </a></li>
+      <li><a href="{% url "job_details" job.slug %}"> Role : {{ job }} </a></li>
       {% endfor %}
     </ul>
   </body>
