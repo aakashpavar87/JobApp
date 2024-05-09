@@ -18,9 +18,12 @@ from django.contrib import admin
 from django.http import HttpResponseNotFound
 from django.urls import path, include
 
-
+def not_found(request, **kwargs):
+    return HttpResponseNotFound("Not Found none Error Code : 404")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('app.urls')),
+    path('', include('subscribe.urls')),
+    path('<path:invalid_path>', not_found),
 ]
