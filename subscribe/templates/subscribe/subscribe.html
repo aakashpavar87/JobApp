@@ -1,65 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscribe Job Shala</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Subscribe Job Shala</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
-    }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        font-size: larger;
+      }
 
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      width: 100vw;
-    }
+      form, form div {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+      }
 
-    form {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-direction: column;
-      gap: 2px;
-    }
+      input, select option{
+        padding: 10px;
+        width: 200px;
+      }
 
-    .error {
-      color: red;
-      font-family: "gilroy";
-      font-weight: 800;
-    }
+      .error {
+        color: red;
+        font-family: "gilroy";
+        font-weight: 800;
+      }
 
-    .helptext {
-      background: linear-gradient(to left top, rgb(244, 47, 25), rgb(221, 210, 209));
-    }
-  </style>
-</head>
+      .helptext {
+        background: linear-gradient(
+          to left top,
+          rgb(244, 47, 25),
+          rgb(221, 210, 209)
+        );
+      }
+    </style>
+  </head>
 
-<body>
-  <form action="" method="post">
-    {% csrf_token %} {% if email_error_empty %}
-    <span class="error">{{ email_error_empty }}</span>
-    {% endif %} {{ form }} {% comment %}
-    <label for="first_name">First Name : </label>
-    <input type="text" name="first_name" />
-    <br />
-    <label for="last_name">Last Name : </label>
-    <input type="text" name="last_name" />
-    <br />
-    <label for="email">Email : </label>
-    <input type="email" name="email" />
-    <br />
-    {% endcomment %}
-    <input type="submit" value="Submit" />
-    <br />
-  </form>
-</body>
+  <body>
+    <form method="post">
+      {% csrf_token %} {% if email_error_empty %}
+      <span class="error">{{ email_error_empty }}</span>
+      {% endif %} {% for field in form %}
+      <div class="subscribe_field">
+        {{field.errors}}
+        <label for="{{ field.id_for_label }}">{{field.label}}</label>
+        {{field}}
+      </div>
+      {% endfor %} {% comment %} manual rendering of forms {% endcomment %}
+      {%comment %}
+      <div class="subscribe_field">
+        {{form.first_name.errors}}
+        <label for="{{ form.first_name.id_for_label }}"
+          >{{ form.first_name.label }}
+        </label>
+        {{form.first_name}}
+      </div>
 
+      <div class="subscribe_field">
+        {{form.last_name.errors}}
+        <label for="{{ form.last_name.id_for_label }}"
+          >{{ form.last_name.label }}
+        </label>
+        {{form.last_name}}
+      </div>
+
+      <div class="subscribe_field">
+        {{form.email.errors}}
+        <label for="{{ form.email.id_for_label }}"
+          >{{ form.email.label }}
+        </label>
+        {{form.email}}
+      </div>
+
+      <div class="subscribe_field">
+        {{form.age.errors}}
+        <label for="{{ form.age.id_for_label }}">{{ form.age.label }} </label>
+        {{form.age}}
+      </div>
+      {% endcomment %} 
+      {% comment %} 
+      {{ form }}
+      <label for="first_name">First Name : </label>
+      <input type="text" name="first_name" />
+      <br />
+      <label for="last_name">Last Name : </label>
+      <input type="text" name="last_name" />
+      <br />
+      <label for="email">Email : </label>
+      <input type="email" name="email" />
+      <br />
+      {% endcomment %}
+      <input type="submit" value="Submit" />
+      <br />
+    </form>
+  </body>
 </html>
