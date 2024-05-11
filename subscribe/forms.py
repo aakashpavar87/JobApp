@@ -7,7 +7,7 @@ class SubscribeForm(forms.Form):
     email = forms.EmailField(max_length=100)
     age = forms.IntegerField(max_value=100, min_value=18)
     
-    # We can use clean_[field_name] syntax for validation purposes
+    # We can use clean_[field_name] syntax for validation purposes it specific for one field
     def clean_first_name(self):
         first_name = self.cleaned_data['first_name']
         if "," in first_name:
