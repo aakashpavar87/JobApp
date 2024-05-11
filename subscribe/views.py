@@ -23,11 +23,11 @@ def subscribe(request):
             print(cleaned_data)
 
             # Now you can access cleaned data for saving to the database
-            Subscribe.objects.create(
-                first_name=cleaned_data['first_name'],
-                last_name=cleaned_data['last_name'],
-                email=cleaned_data['email']
-            )
+            # Subscribe.objects.create(
+            #     first_name=cleaned_data['first_name'],
+            #     last_name=cleaned_data['last_name'],
+            #     email=cleaned_data['email']
+            # )
             return redirect(reverse('thanks'))
 
     context = {'form': subscribe_form}
