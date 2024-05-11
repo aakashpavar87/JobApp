@@ -13,7 +13,7 @@
           sans-serif;
       }
 
-      body {
+      {% comment %} body {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -27,7 +27,7 @@
         align-items: flex-start;
         flex-direction: column;
         gap: 2px;
-      }
+      } {% endcomment %}
 
       .error {
         color: red;
@@ -41,7 +41,7 @@
     <form action="" method="post">
       {% csrf_token %} {% if email_error_empty %}
       <span class="error">{{ email_error_empty }}</span>
-      {% endif %} {{ form }} {% comment %}
+      {% endif %} {{ form.as_table }} {% comment %}
       <label for="first_name">First Name : </label>
       <input type="text" name="first_name" />
       <br />
