@@ -13,8 +13,7 @@ def subscribe(request):
     if request.POST:
         subscribe_form = SubscribeForm(request.POST)
         if subscribe_form.is_valid():
-            subscribe_form.save()
-                        
+            subscribe_form.save()       
             return redirect(reverse('thanks'))
 
     context = {'form': subscribe_form}

@@ -1,4 +1,3 @@
-from django.http import HttpResponseNotFound
 from django.urls import path
 from app import views
 
