@@ -1,54 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Subscribe Job Shala</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-      }
-
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        width: 100vw;
-        font-size: larger;
-      }
-
-      form, form div {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 6px;
-      }
-
-      input, select option{
-        padding: 10px;
-        width: 200px;
-      }
-
-      .error {
-        color: red;
-        font-family: "gilroy";
-        font-weight: 800;
-      }
-
-      .helptext {
-        background: linear-gradient(
-          to left top,
-          rgb(244, 47, 25),
-          rgb(221, 210, 209)
-        );
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="{% static 'subscribe/style.css' %}" >
   </head>
 
   <body>
@@ -62,6 +19,7 @@
         {{field}}
       </div>
       {% endfor %} {% comment %} manual rendering of forms {% endcomment %}
+      
       {%comment %}
       <div class="subscribe_field">
         {{form.first_name.errors}}
@@ -93,6 +51,7 @@
         {{form.age}}
       </div>
       {% endcomment %} 
+
       {% comment %} 
       {{ form }}
       <label for="first_name">First Name : </label>
@@ -108,5 +67,7 @@
       <input type="submit" value="Submit" />
       <br />
     </form>
+    <button onclick="popUp()">click Me !!!!</button>
+    <script  src="{% static 'subscribe/script.js' %}"></script>
   </body>
 </html>

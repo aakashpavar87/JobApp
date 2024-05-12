@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'fira code';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-size: larger;
+}
+
+form,
+form div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+}
+
+input,
+select option {
+    padding: 10px;
+    width: 200px;
+}
+
+.error {
+    color: red;
+    font-family: "gilroy";
+    font-weight: 800;
+}
+
+.helptext {
+    background: linear-gradient(to left top,
+            rgb(244, 47, 25),
+            rgb(221, 210, 209));
+}
