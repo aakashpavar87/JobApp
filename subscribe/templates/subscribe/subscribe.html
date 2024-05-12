@@ -3,71 +3,119 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Subscribe Job Shala</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'subscribe/style.css' %}" >
+    <link rel="stylesheet" href="{% static "subscribe/style.css" %}" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <title>View job</title>
   </head>
-
   <body>
-    <form method="post">
-      {% csrf_token %} {% if email_error_empty %}
-      <span class="error">{{ email_error_empty }}</span>
-      {% endif %} {% for field in form %}
-      <div class="subscribe_field">
-        {{field.errors}}
-        <label for="{{ field.id_for_label }}">{{field.label}}</label>
-        {{field}}
+    <header>
+      <nav>
+        <div class="container">
+          <div class="logo">
+            <img src="{% static "subscribe/images/logo.svg" %}" alt="" />
+          </div>
+          <div class="links">
+            <a href="{% url "hello_file" %}">Home</a>
+          </div>
+          <span class="material-icons menu" onclick="menu()"> menu </span>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="container">
+          <form class="email-form">
+            <p>
+              <label for="id_first_name">Enter First Name:</label>
+              <input type="text" name="first_name" maxlength="100" required id="id_first_name">
+            </p>
+            <p>
+              <label for="id_last_name">Enter Last Name:</label>
+              <input type="text" name="last_name" maxlength="100" required id="id_last_name">
+            </p>
+            <p>
+              <label for="id_email">Enter Email:</label>
+              <input type="email" name="email" maxlength="100" required id="id_email"> 
+            </p>
+            <p>
+              <label for="id_option">Option:</label>
+              <select name="option" id="id_option">
+            <option value="W">Weekly</option>
+            <option value="M" selected>Monthly</option>
+          </select>
+            </p>
+          <button class="email-submit">Submit</button>
+    </div>
       </div>
-      {% endfor %} {% comment %} manual rendering of forms {% endcomment %}
-      
-      {%comment %}
-      <div class="subscribe_field">
-        {{form.first_name.errors}}
-        <label for="{{ form.first_name.id_for_label }}"
-          >{{ form.first_name.label }}
-        </label>
-        {{form.first_name}}
-      </div>
-
-      <div class="subscribe_field">
-        {{form.last_name.errors}}
-        <label for="{{ form.last_name.id_for_label }}"
-          >{{ form.last_name.label }}
-        </label>
-        {{form.last_name}}
-      </div>
-
-      <div class="subscribe_field">
-        {{form.email.errors}}
-        <label for="{{ form.email.id_for_label }}"
-          >{{ form.email.label }}
-        </label>
-        {{form.email}}
-      </div>
-
-      <div class="subscribe_field">
-        {{form.age.errors}}
-        <label for="{{ form.age.id_for_label }}">{{ form.age.label }} </label>
-        {{form.age}}
-      </div>
-      {% endcomment %} 
-
-      {% comment %} 
-      {{ form }}
-      <label for="first_name">First Name : </label>
-      <input type="text" name="first_name" />
-      <br />
-      <label for="last_name">Last Name : </label>
-      <input type="text" name="last_name" />
-      <br />
-      <label for="email">Email : </label>
-      <input type="email" name="email" />
-      <br />
-      {% endcomment %}
-      <input type="submit" value="Submit" />
-      <br />
-    </form>
-    <button onclick="popUp()">click Me !!!!</button>
-    <script  src="{% static 'subscribe/script.js' %}"></script>
+    </section>
+    <script src="{% static "subscribe/app.js" %}"></script>
   </body>
 </html>
+
+
+{% comment %} Commented Code 
+ 
+<form method="post">
+  {% csrf_token %} {% if email_error_empty %}
+  <span class="error">{{ email_error_empty }}</span>
+  {% endif %} {% for field in form %}
+  <div class="subscribe_field">
+    {{field.errors}}
+    <label for="{{ field.id_for_label }}">{{field.label}}</label>
+    {{field}}
+  </div>
+  {% endfor %} 
+ 
+  <input type="submit" value="Submit" />
+  <br />
+</form>
+{% endcomment %}
+
+{% comment %}
+<div class="subscribe_field">
+  {{form.first_name.errors}}
+  <label for="{{ form.first_name.id_for_label }}"
+    >{{ form.first_name.label }}
+  </label>
+  {{form.first_name}}
+</div>
+
+<div class="subscribe_field">
+  {{form.last_name.errors}}
+  <label for="{{ form.last_name.id_for_label }}"
+    >{{ form.last_name.label }}
+  </label>
+  {{form.last_name}}
+</div>
+
+<div class="subscribe_field">
+  {{form.email.errors}}
+  <label for="{{ form.email.id_for_label }}"
+    >{{ form.email.label }}
+  </label>
+  {{form.email}}
+</div>
+
+<div class="subscribe_field">
+  {{form.age.errors}}
+  <label for="{{ form.age.id_for_label }}">{{ form.age.label }} </label>
+  {{form.age}}
+</div>
+{% endcomment %} 
+
+{% comment %} 
+{{ form }}
+<label for="first_name">First Name : </label>
+<input type="text" name="first_name" />
+<br />
+<label for="last_name">Last Name : </label>
+<input type="text" name="last_name" />
+<br />
+<label for="email">Email : </label>
+<input type="email" name="email" />
+<br />
+{% endcomment %}

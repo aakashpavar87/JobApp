@@ -58,6 +58,13 @@ class Location(models.Model):
 
 
 class JobPost(models.Model):
+    
+    JOB_TYPE_CHOICES = [
+        ('FULL', 'Full Time'),
+        ('PART', 'Part Time'),
+        ('INTERN', 'Intern Ship')
+    ]
+    
     title = models.CharField(max_length=200)
     description = models.CharField(max_length=200)
     posted_date = models.DateTimeField(auto_now_add=True)
@@ -70,7 +77,8 @@ class JobPost(models.Model):
     # This is for many-to-one relationship Ex: Many JobPost related to one Author
     author = models.ForeignKey(Author, on_delete=models.CASCADE, null=True)
     # This is for many-to-many realtionship Ex: One JobPost have many Skills and Vice Versa
-    skills = models.ManyToManyField(Skills, null=True)
+    skills = models.ManyToManyField(Skills)
+    type= models.CharField(max_length=100, default='FULL', null=False, choices=JOB_TYPE_CHOICES)
     
     def __str__(self):
         """This method works as toString method of our model it overrides in built method of base class Model"""

@@ -48,15 +48,13 @@ def hello_file(request):
 # New Function that interact with database
 def job_page(request, id):
     try:
-        site = "localhost:8080"
         print(id)
-        # if redirect_Id == 0:
-        #     return redirect("/")
         foundJob = JobPost.objects.filter(slug=id)[0]
         context = {
             'job_title': foundJob.title,
             'job_description': foundJob.description,
-            'job_salary': foundJob.salary
+            'job_salary': foundJob.salary,
+            'job': foundJob
         }
         return render(request,'home/job_detail.html', context)
     except:
