@@ -58,7 +58,6 @@ class Location(models.Model):
 
 
 class JobPost(models.Model):
-    
     JOB_TYPE_CHOICES = [
         ('FULL', 'Full Time'),
         ('PART', 'Part Time'),

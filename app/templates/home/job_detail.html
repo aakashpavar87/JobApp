@@ -1,54 +1,29 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href={% static "app/style.css" %} />
-    <link
-      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-      rel="stylesheet"
-    />
-    <title>View job</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="container">
-          <div class="logo">
-            <img src="{% static "app/images/logo.svg"%}" alt="" />
-          </div>
-          <div class="links">
-            <a href="{% url "hello_file" %}" onclick="menu()">Home</a>
-          </div>
-          <span class="material-icons menu" onclick="menu()"> menu </span>
-        </div>
-      </nav>
-    </header>
-    <section>
-      <div class="container">
-        <div class="view-post">
-          <h1 class="jobtitle">
-            {{job_title}}
-          </h1>
-          <p class="location it">Location: <span>{{ job.location.city }}</span></p>
-          <p class="status it">Type: <span>{{ job.type }}</span></p>
-          <p class="budget it">Salary: <span>{{job_salary}} ₹</span></p>
-          <div class="desc">
-            
-            <p class="details">
-              <h3>
-                {{job_description}}
-              </h3>
-              maiores nostrum saepe iste adipisci voluptate libero ipsa
-              deserunt. Ab, veritatis id.Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Modi, incidunt iste?
-            </p>
-          </div>
+{% extends "base.html" %}
+
+{% block title %}Post of {{job_title}}{% endblock title %}
+
+{% block content %}
+  <section>
+    <div class="container">
+      <div class="view-post">
+        <h1 class="jobtitle">
+          {{job_title}}
+        </h1>
+        <p class="location it">Location: <span>{{ job.location.city }}</span></p>
+        <p class="status it">Type: <span>{{ job.type }}</span></p>
+        <p class="budget it">Salary: <span>{{job_salary}} ₹</span></p>
+        <div class="desc">
+          
+          <p class="details">
+            <h3>
+              {{job_description}}
+            </h3>
+            maiores nostrum saepe iste adipisci voluptate libero ipsa
+            deserunt. Ab, veritatis id.Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Modi, incidunt iste?
+          </p>
         </div>
       </div>
-    </section>
-    <script src={% static "app/app.js" %}></script>
-  </body>
-</html>
+    </div>
+  </section>
+{% endblock content %}
