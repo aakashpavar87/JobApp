@@ -28,7 +28,9 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-(5y$jjg#!zvhq^rhojdmrop*c0
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('IS_DEVELOPMENT', True) == 'True'
+# DEBUG = os.getenv('IS_DEVELOPMENT', True) == 'True'
+
+DEBUG = True
 
 
 ALLOWED_HOSTS = [os.getenv('ALLOWED_HOST', '127.0.0.1')]
@@ -46,6 +48,7 @@ INSTALLED_APPS = [
     'app.apps.AppConfig',
     'subscribe.apps.SubscribeConfig',
     'uploadapp.apps.UploadappConfig',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -129,7 +132,7 @@ STATIC_URL = 'static/'
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_ROOT = BASE_DIR / 'UPLOADS/'
 
@@ -139,3 +142,13 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3.S3Storage'
+
+AWS_S3_ACCESS_KEY_ID = os.getenv('AWS_S3_ACCESS_KEY_ID')
+
+AWS_S3_SECRET_ACCESS_KEY = os.getenv('AWS_S3_SECRET_ACCESS_KEY')
+
+AWS_STORAGE_BUCKET_NAME = os.getenv('AWS_STORAGE_BUCKET_NAME')
+
+AWS_QUERYSTRING_AUTH = False
