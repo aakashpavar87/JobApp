@@ -7,3 +7,10 @@
 - 3. create requirements.txt and put all dependenscies of your project in that file
     - Execute this command for the same
         - python -m pip freeze > requirements.txt
+
+
+- Command for cutting dynos from heroku app
+    heroku ps:scale web=0
+
+- Command for assigning dynos 
+    heroku ps:scale web=1
