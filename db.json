@@ -1,0 +1,1553 @@
+[
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2024-05-07T15:30:39.529Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "1",
+            "object_repr": "aakash",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2024-05-07T15:34:52.759Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "6",
+            "object_repr": "sixth job post",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"JobName\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2024-05-07T16:33:25.124Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "10",
+            "object_repr": "Rust Developer",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2024-05-07T16:35:20.031Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "2",
+            "object_repr": "Spring boot java developer",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"JobName\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2024-05-07T16:58:32.684Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "10",
+            "object_repr": "Rust Developer",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Expiry date\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2024-05-07T17:01:47.034Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "5",
+            "object_repr": "Fifth Job",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Expiry date\", \"JobName\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2024-05-08T10:57:15.533Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "11",
+            "object_repr": "Node Js Developer with salary of 25000",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2024-05-09T07:12:56.576Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "3",
+            "object_repr": "JKL, MNO",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2024-05-09T07:13:02.753Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "13",
+            "object_repr": "Tenth Job with salary of 13000",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Expiry date\", \"JobName\", \"Location\", \"Skills\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2024-05-09T07:14:13.704Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "3",
+            "object_repr": "Playing Video Games",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2024-05-09T07:15:17.607Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "3",
+            "object_repr": "Michel Smith",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2024-05-09T07:15:46.673Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "4",
+            "object_repr": "Tommy Vacceti",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2024-05-11T12:23:16.262Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "2",
+            "object_repr": " ",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2024-05-11T12:23:24.232Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "5",
+            "object_repr": "Aakash Pavar",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 15,
+        "fields": {
+            "action_time": "2024-05-11T12:23:36.810Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "4",
+            "object_repr": "Aakash Pavar",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 16,
+        "fields": {
+            "action_time": "2024-05-11T12:23:36.854Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": "Aakash Pavar",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 17,
+        "fields": {
+            "action_time": "2024-05-11T12:24:26.183Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "8",
+            "object_repr": "Test First Name Test Last Name",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 18,
+        "fields": {
+            "action_time": "2024-05-11T12:24:41.134Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "8",
+            "object_repr": "Test First Name Test Last Name",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 19,
+        "fields": {
+            "action_time": "2024-05-11T12:35:04.920Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "3",
+            "object_repr": "first name last name",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 20,
+        "fields": {
+            "action_time": "2024-05-11T12:35:40.958Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "6",
+            "object_repr": "3434334 45",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 21,
+        "fields": {
+            "action_time": "2024-05-12T12:14:03.734Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "13",
+            "object_repr": "Tenth Job with salary of 13000",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Type\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 22,
+        "fields": {
+            "action_time": "2024-05-12T12:14:59.714Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "4",
+            "object_repr": "Walt Street, Michigan",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 23,
+        "fields": {
+            "action_time": "2024-05-12T12:15:11.594Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "10",
+            "object_repr": "Rust Developer with salary of 12500",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Location\", \"Author\", \"Skills\", \"Type\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 24,
+        "fields": {
+            "action_time": "2024-05-12T12:16:43.525Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "5",
+            "object_repr": "Kalupur, Ahmedabad",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 25,
+        "fields": {
+            "action_time": "2024-05-12T12:16:57.260Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "12",
+            "object_repr": "Ninth Job Post with salary of 12000",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Expiry date\", \"JobName\", \"Location\", \"Skills\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 26,
+        "fields": {
+            "action_time": "2024-05-12T12:17:26.401Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "6",
+            "object_repr": "Paratha gali, Delhi",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 27,
+        "fields": {
+            "action_time": "2024-05-12T12:17:35.295Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "5",
+            "object_repr": "Fifth Job with salary of 1200",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Location\", \"Skills\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 28,
+        "fields": {
+            "action_time": "2024-05-12T12:18:11.654Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "7",
+            "object_repr": "Hari Gali, Himapura",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 29,
+        "fields": {
+            "action_time": "2024-05-12T12:18:16.814Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "11",
+            "object_repr": "Node Js Developer with salary of 25000",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"JobName\", \"Location\", \"Skills\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 30,
+        "fields": {
+            "action_time": "2024-05-12T12:19:02.735Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "8",
+            "object_repr": "Fighter Street, Duncan",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 31,
+        "fields": {
+            "action_time": "2024-05-12T12:19:08.814Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "6",
+            "object_repr": "sixth job post with salary of 23000",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Expiry date\", \"Location\", \"Skills\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 32,
+        "fields": {
+            "action_time": "2024-05-12T12:19:56.640Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "9",
+            "object_repr": "Fourth, Fourth",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 33,
+        "fields": {
+            "action_time": "2024-05-12T12:20:06.962Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "4",
+            "object_repr": "Fourth Job with salary of 1500",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Expiry date\", \"Location\", \"Author\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 34,
+        "fields": {
+            "action_time": "2024-05-12T12:20:42.095Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "10",
+            "object_repr": "Dummy, Dahod",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 35,
+        "fields": {
+            "action_time": "2024-05-12T12:20:57.511Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "3",
+            "object_repr": "Third Job with salary of 1500",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Expiry date\", \"Location\", \"Author\", \"Skills\"]}}]"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 4,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 4,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 4,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 4,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 5,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 5,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 5,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 5,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 6,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 6,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 6,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 6,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add job post",
+            "content_type": 7,
+            "codename": "add_jobpost"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change job post",
+            "content_type": 7,
+            "codename": "change_jobpost"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete job post",
+            "content_type": 7,
+            "codename": "delete_jobpost"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view job post",
+            "content_type": 7,
+            "codename": "view_jobpost"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add location",
+            "content_type": 8,
+            "codename": "add_location"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change location",
+            "content_type": 8,
+            "codename": "change_location"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete location",
+            "content_type": 8,
+            "codename": "delete_location"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view location",
+            "content_type": 8,
+            "codename": "view_location"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 33,
+        "fields": {
+            "name": "Can add author",
+            "content_type": 9,
+            "codename": "add_author"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 34,
+        "fields": {
+            "name": "Can change author",
+            "content_type": 9,
+            "codename": "change_author"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 35,
+        "fields": {
+            "name": "Can delete author",
+            "content_type": 9,
+            "codename": "delete_author"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 36,
+        "fields": {
+            "name": "Can view author",
+            "content_type": 9,
+            "codename": "view_author"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 37,
+        "fields": {
+            "name": "Can add skills",
+            "content_type": 10,
+            "codename": "add_skills"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 38,
+        "fields": {
+            "name": "Can change skills",
+            "content_type": 10,
+            "codename": "change_skills"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 39,
+        "fields": {
+            "name": "Can delete skills",
+            "content_type": 10,
+            "codename": "delete_skills"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 40,
+        "fields": {
+            "name": "Can view skills",
+            "content_type": 10,
+            "codename": "view_skills"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 41,
+        "fields": {
+            "name": "Can add subscribe",
+            "content_type": 11,
+            "codename": "add_subscribe"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 42,
+        "fields": {
+            "name": "Can change subscribe",
+            "content_type": 11,
+            "codename": "change_subscribe"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 43,
+        "fields": {
+            "name": "Can delete subscribe",
+            "content_type": 11,
+            "codename": "delete_subscribe"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 44,
+        "fields": {
+            "name": "Can view subscribe",
+            "content_type": 11,
+            "codename": "view_subscribe"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 45,
+        "fields": {
+            "name": "Can add uploads",
+            "content_type": 12,
+            "codename": "add_uploads"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 46,
+        "fields": {
+            "name": "Can change uploads",
+            "content_type": 12,
+            "codename": "change_uploads"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 47,
+        "fields": {
+            "name": "Can delete uploads",
+            "content_type": 12,
+            "codename": "delete_uploads"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 48,
+        "fields": {
+            "name": "Can view uploads",
+            "content_type": 12,
+            "codename": "view_uploads"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 49,
+        "fields": {
+            "name": "Can add upload file",
+            "content_type": 13,
+            "codename": "add_uploadfile"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 50,
+        "fields": {
+            "name": "Can change upload file",
+            "content_type": 13,
+            "codename": "change_uploadfile"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 51,
+        "fields": {
+            "name": "Can delete upload file",
+            "content_type": 13,
+            "codename": "delete_uploadfile"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 52,
+        "fields": {
+            "name": "Can view upload file",
+            "content_type": 13,
+            "codename": "view_uploadfile"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$720000$0nERwmKmEvu0ei6avXUA0a$Ai2uzPXw68KcbAqGHZ3pRzL4yPBLDs/DgsyLhA58Zlw=",
+            "last_login": "2024-05-11T12:22:24.193Z",
+            "is_superuser": true,
+            "username": "aakash",
+            "first_name": "Aakash",
+            "last_name": "Pavar",
+            "email": "aakashpavar87@gmail.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-05-07T14:49:43Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "auth",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "app",
+            "model": "jobpost"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 8,
+        "fields": {
+            "app_label": "app",
+            "model": "location"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 9,
+        "fields": {
+            "app_label": "app",
+            "model": "author"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 10,
+        "fields": {
+            "app_label": "app",
+            "model": "skills"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 11,
+        "fields": {
+            "app_label": "subscribe",
+            "model": "subscribe"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 12,
+        "fields": {
+            "app_label": "uploadapp",
+            "model": "uploads"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 13,
+        "fields": {
+            "app_label": "uploadapp",
+            "model": "uploadfile"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "230i795kh4dm8j1jrr5y9btljn7v87cr",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAQRf-FtSE8hhRcuvcbyAwMUjWQlHZl_Hdt0oVu7znnvkTEba1xG7zEOYuz0OL0uxGmB7cd5Du2W5ept3WZSe6KPOiQ1575eTncv4OKo35r572aTAZbAqqsQSvrJh-K9Z4tM7hisKhgCiatik4ABEgUmMkCIIr3B8ZmN_g:1s5lk8:_xkDfYDz_2xvGkg26CrshAloNG-idIsvoRFT2qsRsNA",
+            "expire_date": "2024-05-25T12:22:24.204Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "j84dtm1gd6bb91rlpbx75c61nhod79gm",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAQRf-FtSE8hhRcuvcbyAwMUjWQlHZl_Hdt0oVu7znnvkTEba1xG7zEOYuz0OL0uxGmB7cd5Du2W5ept3WZSe6KPOiQ1575eTncv4OKo35r572aTAZbAqqsQSvrJh-K9Z4tM7hisKhgCiatik4ABEgUmMkCIIr3B8ZmN_g:1s4xzS:6CgWeZoWz019_SWke9xZmK2YWUCLzDFBbKbvXjC5Z10",
+            "expire_date": "2024-05-23T07:14:54.820Z"
+        }
+    },
+    {
+        "model": "app.skills",
+        "pk": 1,
+        "fields": {
+            "name": "coding"
+        }
+    },
+    {
+        "model": "app.skills",
+        "pk": 2,
+        "fields": {
+            "name": "speaking"
+        }
+    },
+    {
+        "model": "app.skills",
+        "pk": 3,
+        "fields": {
+            "name": "Playing Video Games"
+        }
+    },
+    {
+        "model": "app.author",
+        "pk": 1,
+        "fields": {
+            "name": "Jimmy Carter",
+            "company": "GOOGLE",
+            "designation": "HR"
+        }
+    },
+    {
+        "model": "app.author",
+        "pk": 2,
+        "fields": {
+            "name": "Stacy Gold Burg",
+            "company": "Face Book",
+            "designation": "HR"
+        }
+    },
+    {
+        "model": "app.author",
+        "pk": 3,
+        "fields": {
+            "name": "Michel Smith",
+            "company": "Netflix",
+            "designation": "HR"
+        }
+    },
+    {
+        "model": "app.author",
+        "pk": 4,
+        "fields": {
+            "name": "Tommy Vacceti",
+            "company": "Vice City",
+            "designation": "Hiring Manager"
+        }
+    },
+    {
+        "model": "app.location",
+        "pk": 1,
+        "fields": {
+            "street": "ABC",
+            "city": "SURAT",
+            "state": "GUJ",
+            "country": "IND",
+            "zip": "380001"
+        }
+    },
+    {
+        "model": "app.location",
+        "pk": 2,
+        "fields": {
+            "street": "XYZ",
+            "city": "EFG",
+            "state": "GUJ",
+            "country": "IND",
+            "zip": "389001"
+        }
+    },
+    {
+        "model": "app.location",
+        "pk": 3,
+        "fields": {
+            "street": "JKL",
+            "city": "MNO",
+            "state": "Guj",
+            "country": "IND",
+            "zip": "380001"
+        }
+    },
+    {
+        "model": "app.location",
+        "pk": 4,
+        "fields": {
+            "street": "Walt Street",
+            "city": "Michigan",
+            "state": "Washington",
+            "country": "USA",
+            "zip": "23991"
+        }
+    },
+    {
+        "model": "app.location",
+        "pk": 5,
+        "fields": {
+            "street": "Kalupur",
+            "city": "Ahmedabad",
+            "state": "Gujarat",
+            "country": "India",
+            "zip": "380002"
+        }
+    },
+    {
+        "model": "app.location",
+        "pk": 6,
+        "fields": {
+            "street": "Paratha gali",
+            "city": "Delhi",
+            "state": "Delhi",
+            "country": "India",
+            "zip": "56999"
+        }
+    },
+    {
+        "model": "app.location",
+        "pk": 7,
+        "fields": {
+            "street": "Hari Gali",
+            "city": "Himapura",
+            "state": "Bihar",
+            "country": "India",
+            "zip": "380001"
+        }
+    },
+    {
+        "model": "app.location",
+        "pk": 8,
+        "fields": {
+            "street": "Fighter Street",
+            "city": "Duncan",
+            "state": "Span",
+            "country": "Italy",
+            "zip": "23001"
+        }
+    },
+    {
+        "model": "app.location",
+        "pk": 9,
+        "fields": {
+            "street": "Fourth",
+            "city": "Fourth",
+            "state": "Gujarat",
+            "country": "India",
+            "zip": "338892"
+        }
+    },
+    {
+        "model": "app.location",
+        "pk": 10,
+        "fields": {
+            "street": "Dummy",
+            "city": "Dahod",
+            "state": "Gujarat",
+            "country": "India",
+            "zip": "387663"
+        }
+    },
+    {
+        "model": "app.jobpost",
+        "pk": 1,
+        "fields": {
+            "title": "Django Rest Developer",
+            "description": "Example desc",
+            "posted_date": "2024-05-06T12:17:04.302Z",
+            "expiry_date": null,
+            "salary": 5000,
+            "jobName": "Dummy",
+            "slug": "django-developer",
+            "location": 1,
+            "author": 2,
+            "type": "FULL",
+            "skills": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "model": "app.jobpost",
+        "pk": 2,
+        "fields": {
+            "title": "Spring boot java developer",
+            "description": "Example 2",
+            "posted_date": "2024-05-06T12:18:06.320Z",
+            "expiry_date": null,
+            "salary": 3000,
+            "jobName": "Backend Developer",
+            "slug": "spring-boot-java-developer",
+            "location": 2,
+            "author": 2,
+            "type": "FULL",
+            "skills": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "app.jobpost",
+        "pk": 3,
+        "fields": {
+            "title": "Third Job",
+            "description": "Demo Description",
+            "posted_date": "2024-05-06T13:19:06.743Z",
+            "expiry_date": "2024-05-12",
+            "salary": 1500,
+            "jobName": "other job",
+            "slug": "new-job",
+            "location": 10,
+            "author": 1,
+            "type": "FULL",
+            "skills": [
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "model": "app.jobpost",
+        "pk": 4,
+        "fields": {
+            "title": "Fourth Job",
+            "description": "Demo Description",
+            "posted_date": "2024-05-06T13:22:13.290Z",
+            "expiry_date": "2024-05-12",
+            "salary": 1500,
+            "jobName": "other job",
+            "slug": "fifth-job",
+            "location": 9,
+            "author": 1,
+            "type": "FULL",
+            "skills": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "app.jobpost",
+        "pk": 5,
+        "fields": {
+            "title": "Fifth Job",
+            "description": "Demo Five",
+            "posted_date": "2024-05-06T18:16:42.421Z",
+            "expiry_date": "2024-05-07",
+            "salary": 1200,
+            "jobName": "Front End Job",
+            "slug": "sixth-job",
+            "location": 6,
+            "author": 3,
+            "type": "FULL",
+            "skills": [
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "model": "app.jobpost",
+        "pk": 6,
+        "fields": {
+            "title": "sixth job post",
+            "description": "Description Sixth Job",
+            "posted_date": "2024-05-07T11:53:43.155Z",
+            "expiry_date": "2024-05-12",
+            "salary": 23000,
+            "jobName": "Sixth Job",
+            "slug": "sixth-job-post",
+            "location": 8,
+            "author": 2,
+            "type": "FULL",
+            "skills": [
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "model": "app.jobpost",
+        "pk": 10,
+        "fields": {
+            "title": "Rust Developer",
+            "description": "Fast and effective language",
+            "posted_date": "2024-05-07T16:33:25.119Z",
+            "expiry_date": "2024-05-09",
+            "salary": 12500,
+            "jobName": "Backend Dev",
+            "slug": "rust-developer",
+            "location": 4,
+            "author": 2,
+            "type": "INTERN",
+            "skills": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "model": "app.jobpost",
+        "pk": 11,
+        "fields": {
+            "title": "Node Js Developer",
+            "description": "Integrate APIs in Node js",
+            "posted_date": "2024-05-08T10:57:15.516Z",
+            "expiry_date": "2024-05-24",
+            "salary": 25000,
+            "jobName": "Demo",
+            "slug": "node-js-developer",
+            "location": 7,
+            "author": 1,
+            "type": "FULL",
+            "skills": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "model": "app.jobpost",
+        "pk": 12,
+        "fields": {
+            "title": "Ninth Job Post",
+            "description": "Demo Ninth Job",
+            "posted_date": "2024-05-08T18:09:53.728Z",
+            "expiry_date": "2024-05-12",
+            "salary": 12000,
+            "jobName": "Nothing",
+            "slug": "ninth-job-post",
+            "location": 5,
+            "author": 1,
+            "type": "FULL",
+            "skills": [
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "model": "app.jobpost",
+        "pk": 13,
+        "fields": {
+            "title": "Tenth Job",
+            "description": "Tenth Job by Author",
+            "posted_date": "2024-05-08T18:25:04.273Z",
+            "expiry_date": "2024-05-09",
+            "salary": 13000,
+            "jobName": "Tenth Job",
+            "slug": "tenth-job",
+            "location": 3,
+            "author": 2,
+            "type": "PART",
+            "skills": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "model": "subscribe.subscribe",
+        "pk": 3,
+        "fields": {
+            "first_name": "first name",
+            "last_name": "last name",
+            "email": "a@gmail.com",
+            "option": "W",
+            "gender": "M"
+        }
+    },
+    {
+        "model": "subscribe.subscribe",
+        "pk": 7,
+        "fields": {
+            "first_name": "demo first",
+            "last_name": "demo last",
+            "email": "last@gmail.com",
+            "option": "W",
+            "gender": "M"
+        }
+    },
+    {
+        "model": "subscribe.subscribe",
+        "pk": 8,
+        "fields": {
+            "first_name": "Test First Name",
+            "last_name": "Test Last Name",
+            "email": "test@full.gmail.com",
+            "option": "W",
+            "gender": "M"
+        }
+    },
+    {
+        "model": "subscribe.subscribe",
+        "pk": 9,
+        "fields": {
+            "first_name": "Dharmesh",
+            "last_name": "Pavar",
+            "email": "dharmesh@gmail.com",
+            "option": "M",
+            "gender": "M"
+        }
+    },
+    {
+        "model": "subscribe.subscribe",
+        "pk": 10,
+        "fields": {
+            "first_name": "Sangeeta",
+            "last_name": "Pavar",
+            "email": "sangeeta@gmail.com",
+            "option": "M",
+            "gender": "F"
+        }
+    },
+    {
+        "model": "subscribe.subscribe",
+        "pk": 11,
+        "fields": {
+            "first_name": "Aakash",
+            "last_name": "Pavar",
+            "email": "a@b.com",
+            "option": "M",
+            "gender": "M"
+        }
+    },
+    {
+        "model": "subscribe.subscribe",
+        "pk": 12,
+        "fields": {
+            "first_name": "Praveen",
+            "last_name": "Pavar",
+            "email": "pavar@gmail.com",
+            "option": "M",
+            "gender": "M"
+        }
+    },
+    {
+        "model": "uploadapp.uploads",
+        "pk": 1,
+        "fields": {
+            "image": "images/jpeg-optimizer_SAVE_20240503_203424.jpg",
+            "description": "Profile"
+        }
+    },
+    {
+        "model": "uploadapp.uploads",
+        "pk": 2,
+        "fields": {
+            "image": "images/octocat-1714132039297.jpg",
+            "description": "Octo Cat"
+        }
+    },
+    {
+        "model": "uploadapp.uploads",
+        "pk": 3,
+        "fields": {
+            "image": "images/Full_Stack_Developer_Resume1x.jpg",
+            "description": "resume"
+        }
+    },
+    {
+        "model": "uploadapp.uploads",
+        "pk": 4,
+        "fields": {
+            "image": "images/Screenshot_59.png",
+            "description": "demo description"
+        }
+    },
+    {
+        "model": "uploadapp.uploadfile",
+        "pk": 1,
+        "fields": {
+            "file": "files/Reciept.pdf",
+            "description": "Reciept of AMC"
+        }
+    },
+    {
+        "model": "uploadapp.uploadfile",
+        "pk": 2,
+        "fields": {
+            "file": "files/github-recovery-codes.txt",
+            "description": "Recovery Codes"
+        }
+    }
+]
