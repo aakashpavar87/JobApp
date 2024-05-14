@@ -28,5 +28,4 @@ urlpatterns = [
     path('', include('app.urls')),
     path('', include('subscribe.urls')),
     path('uploads/', include('uploadapp.urls')),
-    # path('<path:invalid_path>', not_found),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + [path('<path:invalid_path>', not_found),]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + [path('<path:invalid_path>', not_found),]
