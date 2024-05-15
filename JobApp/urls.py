@@ -30,6 +30,7 @@ urlpatterns = [
     path('uploads/', include('uploadapp.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  + [path('<path:invalid_path>', not_found),]
 
+# Added some demo changes
 # For implementing whitenoise as static files serving host
 # + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
